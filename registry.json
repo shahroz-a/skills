@@ -23,7 +23,7 @@
       "safetyLevel": "writes-workspace",
       "source": "Original UI Grids guidance derived from the approved interface knowledge base.",
       "fixtureCount": 12,
-      "lastPassingCommit": "local-validation"
+      "lastPassingCommit": "268529d627a7db4c39e0feb89dab05bb9695f1bb"
     }
   ]
 }
