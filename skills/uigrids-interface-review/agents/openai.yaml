@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Grids Interface Review"
+  short_description: "Review interfaces with approved UI guidance"
+  default_prompt: "Use $uigrids-interface-review to audit this interface and prioritize actionable fixes."

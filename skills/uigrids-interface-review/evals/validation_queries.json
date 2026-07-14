@@ -1,0 +1,32 @@
+[
+  {
+    "query": "The save button gives no response and users click it repeatedly. Review the flow.",
+    "should_trigger": true,
+    "reason": "This is a feedback-loop failure."
+  },
+  {
+    "query": "Check whether this hover-only row menu works for keyboard and touch users.",
+    "should_trigger": true,
+    "reason": "Input parity and hover disclosure are explicit domains."
+  },
+  {
+    "query": "The empty search page looks broken. Design the correct state and verify it on mobile.",
+    "should_trigger": true,
+    "reason": "Empty-state guidance and responsive verification apply."
+  },
+  {
+    "query": "Should the hero use teal or magenta? I only want a mood-board opinion.",
+    "should_trigger": false,
+    "reason": "Pure visual taste without an interface problem is a non-trigger."
+  },
+  {
+    "query": "Optimize this PostgreSQL query plan.",
+    "should_trigger": false,
+    "reason": "Database performance is unrelated."
+  },
+  {
+    "query": "Write a launch announcement for our new API.",
+    "should_trigger": false,
+    "reason": "Marketing copy is not an interface review."
+  }
+]

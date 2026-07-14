@@ -1,0 +1,9 @@
+{
+  "name": "uigrids-skills",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "registry": "node scripts/build-registry.mjs",
+    "validate": "node scripts/validate.mjs"
+  }
+}

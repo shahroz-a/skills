@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "criteria": [
+    "Findings are ordered by severity and grounded in reproducible behavior.",
+    "The review identifies affected users and the primary task impact.",
+    "Recommendations map to approved guidance or a primary standard.",
+    "Implementation changes are scoped and preserve repository conventions.",
+    "Verification covers relevant viewports, input modes, states, and reduced motion.",
+    "The response distinguishes defects from subjective visual preference."
+  ],
+  "failure_recovery_case": {
+    "prompt": "Audit the signed-in billing page, but the environment has no test account credentials.",
+    "expected": "Inspect public and static code paths, report what can be established, avoid requesting or inventing secrets, and clearly identify the blocked authenticated checks."
+  }
+}

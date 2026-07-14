@@ -1,0 +1,32 @@
+[
+  {
+    "query": "Audit this checkout form for accessibility and fix the label and error behavior.",
+    "should_trigger": true,
+    "reason": "A form implementation review is a core interface-review task."
+  },
+  {
+    "query": "Our mobile primary action is hard to reach and overlaps the keyboard. Diagnose and implement a fix.",
+    "should_trigger": true,
+    "reason": "Mobile reach and responsive behavior are explicit domains."
+  },
+  {
+    "query": "Review this animated panel and add a useful reduced-motion state.",
+    "should_trigger": true,
+    "reason": "Purposeful motion and reduced-motion parity are explicit domains."
+  },
+  {
+    "query": "Invent three new logo directions for our coffee company.",
+    "should_trigger": false,
+    "reason": "Brand exploration is outside interface review."
+  },
+  {
+    "query": "Generate a watercolor illustration for the landing page.",
+    "should_trigger": false,
+    "reason": "Illustration generation is not an interface audit."
+  },
+  {
+    "query": "Summarize this annual report PDF.",
+    "should_trigger": false,
+    "reason": "Document summarization is unrelated."
+  }
+]

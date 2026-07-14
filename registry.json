@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "skills": [
+    {
+      "name": "uigrids-interface-review",
+      "description": "Review and improve product interfaces using evidence-based UI Grids guidance. Use for UI or UX audits, implementation reviews, and fixes involving forms, navigation, motion, feedback, empty states, interface audio, mobile reach, hover or focus parity, accessibility, and responsive behavior. Do not use for brand exploration, illustration, or subjective visual taste without an interface problem to solve.",
+      "path": "skills/uigrids-interface-review",
+      "checksum": "sha256:f0070d80a5154a7d60b00c7794e9a9df012a2a685968c6129bd4cf0a399f6d33",
+      "version": "0.1.0",
+      "origin": "uigrids",
+      "license": "MIT",
+      "author": "UI Grids",
+      "maintainer": "UI Grids editorial",
+      "releasedAt": "2026-07-14",
+      "reviewedAt": "2026-07-14",
+      "nextReviewAt": "2027-01-14",
+      "testedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "copilot"
+      ],
+      "safetyLevel": "writes-workspace",
+      "source": "Original UI Grids guidance derived from the approved interface knowledge base.",
+      "fixtureCount": 12,
+      "lastPassingCommit": "local-validation"
+    }
+  ]
+}
