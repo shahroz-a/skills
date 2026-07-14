@@ -16,4 +16,4 @@ Copy the selected skill directory into the native skills directory supported by 
 - Destructive commands, credentials, publication, and account access require explicit permission.
 - External or adapted work is labeled and attributed; UI Grids ownership is never inferred from hosting.
 
-Run `node scripts/validate.mjs` before proposing a change. See `CONTRIBUTING.md` for the release workflow.
+Run `node scripts/validate.mjs` before proposing a change. The generated registry contract is documented in `schema/registry.schema.json`. See `CONTRIBUTING.md` for the release workflow.

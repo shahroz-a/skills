@@ -6,6 +6,8 @@ import { spawnSync } from 'node:child_process'
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const skillsRoot = path.join(root, 'skills')
 const errors = []
+const commitPattern = /^[a-f0-9]{40}$/
+const checksumPattern = /^sha256:[a-f0-9]{64}$/
 
 function readJson(file) {
   try {
@@ -50,6 +52,18 @@ for (const entry of fs.readdirSync(skillsRoot, { withFileTypes: true }).filter((
 
 const build = spawnSync(process.execPath, [path.join(root, 'scripts/build-registry.mjs')], { stdio: 'inherit' })
 if (build.status !== 0) errors.push('registry generation failed')
+
+const registry = readJson(path.join(root, 'registry.json'))
+if (registry?.schemaVersion !== 1 || !Array.isArray(registry?.skills)) errors.push('registry.json: invalid root schema')
+for (const skill of registry?.skills || []) {
+  if (!checksumPattern.test(skill.checksum || '')) errors.push(`${skill.name}: invalid registry checksum`)
+  if (!commitPattern.test(skill.lastPassingCommit || '')) errors.push(`${skill.name}: invalid lastPassingCommit`)
+  if (!['uigrids', 'external', 'adapted'].includes(skill.origin)) errors.push(`${skill.name}: invalid origin`)
+  if (!Array.isArray(skill.testedAgents) || skill.testedAgents.length === 0) errors.push(`${skill.name}: testedAgents must not be empty`)
+}
+
+const schema = readJson(path.join(root, 'schema/registry.schema.json'))
+if (schema?.properties?.schemaVersion?.const !== 1) errors.push('schema/registry.schema.json: schema version must be 1')
 
 if (errors.length) {
   console.error(`\nValidation failed:\n- ${errors.join('\n- ')}`)
