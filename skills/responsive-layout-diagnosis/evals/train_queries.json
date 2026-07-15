@@ -1,0 +1,32 @@
+[
+  {
+    "query": "The pricing page has horizontal scrolling at 360px. Find the exact element causing it and fix the layout without hiding overflow.",
+    "should_trigger": true,
+    "reason": "Horizontal overflow diagnosis and ownership-based repair are core tasks."
+  },
+  {
+    "query": "Our dashboard grid overlaps the side rail between tablet and desktop widths. Reproduce it and implement a responsive fix.",
+    "should_trigger": true,
+    "reason": "A breakpoint-specific grid collision is a direct trigger."
+  },
+  {
+    "query": "The mobile checkout action disappears behind the software keyboard. Diagnose the viewport and safe-area behavior.",
+    "should_trigger": true,
+    "reason": "Virtual keyboard and fixed-action collisions are explicit domains."
+  },
+  {
+    "query": "Create three visual identity directions for a new accounting brand.",
+    "should_trigger": false,
+    "reason": "Brand exploration is unrelated to responsive failure diagnosis."
+  },
+  {
+    "query": "Summarize the text from this PDF contract.",
+    "should_trigger": false,
+    "reason": "Document extraction is outside rendered interface layout work."
+  },
+  {
+    "query": "Optimize this SQL query and propose new indexes.",
+    "should_trigger": false,
+    "reason": "Database performance work does not involve responsive UI."
+  }
+]

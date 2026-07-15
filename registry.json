@@ -2,6 +2,54 @@
   "schemaVersion": 1,
   "skills": [
     {
+      "name": "component-preview-authoring",
+      "description": "Create, repair, and verify live previews for reusable UI components. Use when building component galleries, registry index cards, detail-page demos, preview fixtures, isolated sandboxes, lazy renderers, or fallbacks for blank, crashing, oversized, nondeterministic, or noninteractive component previews. Do not use for static marketing thumbnails, unrelated page redesign, or copying a third-party demo without source and license review.",
+      "path": "skills/component-preview-authoring",
+      "checksum": "sha256:56cca1cf6be02f00ac8b682259a66a08bb44d668eb25af3c132b6bfe5e74d4ae",
+      "version": "0.1.0",
+      "origin": "uigrids",
+      "license": "MIT",
+      "author": "UI Grids",
+      "maintainer": "UI Grids editorial",
+      "releasedAt": "2026-07-15",
+      "reviewedAt": "2026-07-15",
+      "nextReviewAt": "2027-01-15",
+      "testedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "copilot"
+      ],
+      "safetyLevel": "writes-workspace",
+      "source": "Original UI Grids workflow derived from building and repairing reusable live component previews.",
+      "fixtureCount": 12,
+      "lastPassingCommit": "57bafcd874b79d58ca70bae4af5932fe358ae47d"
+    },
+    {
+      "name": "responsive-layout-diagnosis",
+      "description": "Diagnose and fix responsive interface failures using rendered evidence and ownership-based debugging. Use for horizontal overflow, clipped or overlapping content, unstable grids, breakpoint regressions, oversized mobile typography, fixed or sticky collisions, viewport-unit problems, safe-area issues, text-zoom failures, and layouts that break on desktop, tablet, or mobile. Do not use for brand exploration, unrelated visual restyling, or document layouts outside a rendered interface.",
+      "path": "skills/responsive-layout-diagnosis",
+      "checksum": "sha256:1e1bd1bcbad7bd42659f78e59b806fb1866c700887f878bb4cd9ce8d2fb96de7",
+      "version": "0.1.0",
+      "origin": "uigrids",
+      "license": "MIT",
+      "author": "UI Grids",
+      "maintainer": "UI Grids editorial",
+      "releasedAt": "2026-07-15",
+      "reviewedAt": "2026-07-15",
+      "nextReviewAt": "2027-01-15",
+      "testedAgents": [
+        "codex",
+        "claude-code",
+        "cursor",
+        "copilot"
+      ],
+      "safetyLevel": "writes-workspace",
+      "source": "Original UI Grids workflow derived from repeated responsive implementation and browser-verification work.",
+      "fixtureCount": 12,
+      "lastPassingCommit": "57bafcd874b79d58ca70bae4af5932fe358ae47d"
+    },
+    {
       "name": "uigrids-interface-review",
       "description": "Review and improve product interfaces using evidence-based UI Grids guidance. Use for UI or UX audits, implementation reviews, and fixes involving forms, navigation, motion, feedback, empty states, interface audio, mobile reach, hover or focus parity, accessibility, and responsive behavior. Do not use for brand exploration, illustration, or subjective visual taste without an interface problem to solve.",
       "path": "skills/uigrids-interface-review",

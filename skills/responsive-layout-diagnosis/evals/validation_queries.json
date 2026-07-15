@@ -1,0 +1,32 @@
+[
+  {
+    "query": "A long translated navigation label pushes the account button off-screen. Fix the shared header and verify text zoom.",
+    "should_trigger": true,
+    "reason": "Intrinsic text sizing and shared responsive header behavior are explicit triggers."
+  },
+  {
+    "query": "This component preview is blank on narrow cards and becomes wider than the page in list view. Diagnose both modes.",
+    "should_trigger": true,
+    "reason": "Preview surfaces with unstable dimensions are covered by the skill."
+  },
+  {
+    "query": "At 768px the filter rail and results both claim half the page, clipping every control. Please repair the breakpoint contract.",
+    "should_trigger": true,
+    "reason": "A layout structure that fails at a breakpoint is a direct trigger."
+  },
+  {
+    "query": "Should our campaign use a serif or sans-serif logo?",
+    "should_trigger": false,
+    "reason": "A logo preference has no responsive interface failure."
+  },
+  {
+    "query": "Add OAuth login to this API service.",
+    "should_trigger": false,
+    "reason": "Authentication backend implementation is unrelated."
+  },
+  {
+    "query": "Write release notes for the latest mobile app version.",
+    "should_trigger": false,
+    "reason": "Release writing is not layout diagnosis."
+  }
+]

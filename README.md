@@ -18,6 +18,8 @@ Use this repository when you want an agent to:
 
 | Skill | What it does | Version | Tested agents |
 | --- | --- | --- | --- |
+| [`component-preview-authoring`](./skills/component-preview-authoring/) | Builds deterministic, isolated, responsive live previews for component catalogues and detail pages. | `0.1.0` | Codex, Claude Code, Cursor, Copilot |
+| [`responsive-layout-diagnosis`](./skills/responsive-layout-diagnosis/) | Reproduces responsive failures, identifies the owning constraint, applies a scoped fix, and verifies breakpoint behavior. | `0.1.0` | Codex, Claude Code, Cursor, Copilot |
 | [`uigrids-interface-review`](./skills/uigrids-interface-review/) | Audits and improves implemented interfaces using evidence-based checks for navigation, forms, feedback, states, accessibility, motion, mobile reach, and responsive behavior. | `0.1.0` | Codex, Claude Code, Cursor, Copilot |
 
 The machine-readable catalogue in [`registry.json`](./registry.json) includes checksums, provenance, review dates, safety levels, fixture counts, and tested-agent support.
@@ -52,6 +54,8 @@ fix the high-impact issues, and verify keyboard, focus, loading, error, and succ
 ```
 
 The interface review skill starts from rendered evidence, separates usability defects from visual preference, makes scoped fixes when requested, and reports verification plus residual risk.
+
+Use the responsive diagnosis skill when the failure is specifically caused by viewport, content, track, overlay, or intrinsic sizing constraints. Use the component preview skill when a reusable component needs a reliable catalogue card, detail demo, fixture, lazy renderer, or local failure boundary.
 
 ## Quality Contract
 

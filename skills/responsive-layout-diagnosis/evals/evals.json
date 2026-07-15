@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "criteria": [
+    "The response reproduces the failure at explicit viewport and state conditions before editing.",
+    "The root cause identifies the owning element and constraint rather than only the visual symptom.",
+    "The fix preserves essential content and avoids global overflow masking or disabled zoom.",
+    "Verification covers the failing case, adjacent breakpoints, narrow mobile widths, and text scaling where relevant.",
+    "Shared component consumers, keyboard order, touch behavior, overlays, and reduced motion are considered proportionally.",
+    "The report distinguishes completed evidence from untested residual risk."
+  ],
+  "failure_recovery_case": {
+    "prompt": "Fix a responsive regression reported only on a signed-in billing route, but no test account or reproduction recording is available.",
+    "expected": "Inspect shared layout code and public states without inventing credentials, state what can be measured, request the minimum missing evidence, and avoid speculative layout changes that cannot be verified."
+  }
+}

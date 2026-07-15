@@ -1,0 +1,4 @@
+interface:
+  display_name: "Responsive Layout Diagnosis"
+  short_description: "Diagnose and fix responsive layout failures"
+  default_prompt: "Use $responsive-layout-diagnosis to reproduce and fix this layout across desktop, tablet, and mobile."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Component Preview Authoring"
+  short_description: "Build reliable interactive component previews"
+  default_prompt: "Use $component-preview-authoring to create a realistic, responsive preview for this UI component."

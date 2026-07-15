@@ -1,0 +1,32 @@
+[
+  {
+    "query": "Create a live catalogue preview and detail demo for this animated tabs component, including keyboard and reduced-motion behavior.",
+    "should_trigger": true,
+    "reason": "Authoring index and detail previews for a reusable component is the core task."
+  },
+  {
+    "query": "Several canvas components show blank cards after lazy loading. Repair the preview host and add pixel verification.",
+    "should_trigger": true,
+    "reason": "Blank lazy canvas previews and render evidence are explicit domains."
+  },
+  {
+    "query": "Build deterministic fixtures and local error fallbacks for every card in this component registry.",
+    "should_trigger": true,
+    "reason": "Fixture determinism and per-preview failure isolation are central requirements."
+  },
+  {
+    "query": "Design a static social image for our product launch.",
+    "should_trigger": false,
+    "reason": "A static marketing image is not an executable component preview."
+  },
+  {
+    "query": "Write API documentation for our payment webhook.",
+    "should_trigger": false,
+    "reason": "Backend API documentation does not require a UI component preview."
+  },
+  {
+    "query": "Summarize these customer interview transcripts.",
+    "should_trigger": false,
+    "reason": "Research summarization is unrelated."
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "query": "The pointer effect works on its detail page but freezes every other card on the component index. Isolate and optimize its preview.",
+    "should_trigger": true,
+    "reason": "Catalogue cost, isolation, and detail-versus-index behavior are direct triggers."
+  },
+  {
+    "query": "Add a preview for this comparison slider with owned assets, touch input, keyboard controls, and a resettable fixture.",
+    "should_trigger": true,
+    "reason": "A representative interactive component demo fits the skill exactly."
+  },
+  {
+    "query": "One missing provider blanks an entire component category. Add per-card loading, unsupported, and error states.",
+    "should_trigger": true,
+    "reason": "Provider failures and local error boundaries are explicit preview concerns."
+  },
+  {
+    "query": "Redesign the pricing page hero and choose a new font pairing.",
+    "should_trigger": false,
+    "reason": "General page art direction is outside component preview authoring."
+  },
+  {
+    "query": "Create a database migration for organization roles.",
+    "should_trigger": false,
+    "reason": "Database schema work is unrelated."
+  },
+  {
+    "query": "Generate a PNG thumbnail from this uploaded photo.",
+    "should_trigger": false,
+    "reason": "A static image conversion is not a live component preview."
+  }
+]

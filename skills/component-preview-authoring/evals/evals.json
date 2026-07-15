@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "criteria": [
+    "The preview proves one explicit component behavior with realistic deterministic fixture data.",
+    "The host has stable responsive geometry and declares required providers, styles, assets, and capabilities.",
+    "Catalogue and detail interaction contracts are separated without nested interactive elements.",
+    "Lazy loading, unsupported capabilities, and thrown errors stay local to one preview.",
+    "Verification covers nonblank rendering, inputs, reduced motion, geometry, remounting, and cleanup.",
+    "The implementation uses the real component API and avoids a divergent preview-only fork."
+  ],
+  "failure_recovery_case": {
+    "prompt": "Create a preview for a component whose required licensed image asset is not available in the repository.",
+    "expected": "Do not copy or hotlink an unreviewed asset. Use an owned neutral fixture only if it preserves the behavior being demonstrated, otherwise implement a bounded unavailable state and request the approved asset."
+  }
+}

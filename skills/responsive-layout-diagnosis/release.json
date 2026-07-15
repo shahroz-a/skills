@@ -1,0 +1,15 @@
+{
+  "version": "0.1.0",
+  "origin": "uigrids",
+  "license": "MIT",
+  "author": "UI Grids",
+  "maintainer": "UI Grids editorial",
+  "releasedAt": "2026-07-15",
+  "reviewedAt": "2026-07-15",
+  "nextReviewAt": "2027-01-15",
+  "testedAgents": ["codex", "claude-code", "cursor", "copilot"],
+  "safetyLevel": "writes-workspace",
+  "source": "Original UI Grids workflow derived from repeated responsive implementation and browser-verification work.",
+  "fixtureCount": 12,
+  "lastPassingCommit": "57bafcd874b79d58ca70bae4af5932fe358ae47d"
+}
